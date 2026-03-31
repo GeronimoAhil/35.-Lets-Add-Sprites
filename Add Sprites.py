@@ -6,11 +6,18 @@ SCREEN_WIDTH = 500
 SCREEN_HEIGHT = 400
 
 display_surface = pygame.display.set_mode((500, 400))
-rect_width = 50
-rect_height = 50
-rect_x = SCREEN_WIDTH // 2 - rect_width // 2
-rect_y = SCREEN_HEIGHT // 2 - rect_height // 2
-player_rect = pygame.Rect(rect_x, rect_y, rect_width, rect_height)
+rect1_width = 50
+rect1_height = 50
+rect1_x = SCREEN_WIDTH // 2 - rect1_width // 2
+rect1_y = SCREEN_HEIGHT // 2 - rect1_height // 2
+player_rect = pygame.Rect(rect1_x, rect1_y, rect1_width, rect1_height)
+rect_speed = 5
+
+rect2_width = 50
+rect2_height = 50
+rect2_x = SCREEN_WIDTH // 2 - rect2_width // 3
+rect2_y = SCREEN_HEIGHT // 2 - rect2_height // 3
+player_rect = pygame.Rect(rect2_x, rect2_y, rect2_width, rect2_height)
 rect_speed = 5
 running = True
 clock = pygame.time.Clock()
